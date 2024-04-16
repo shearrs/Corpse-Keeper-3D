@@ -78,9 +78,9 @@ public abstract class Plant : MonoBehaviour, IInteractable
         currentStage = newStage;
         currentStage.SetActive(true);
 
-        UpdateGrowthStageInternal();
+        OnGrowthStageChanged();
     }
-    protected abstract void UpdateGrowthStageInternal();
+    protected abstract void OnGrowthStageChanged();
 
     public abstract void Interact();
 }

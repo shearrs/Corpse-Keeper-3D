@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         playerCamera = Camera.main.GetComponent<PlayerCamera>();
 
         PlayerInputHandler.JumpBuffer = Stats.JumpBuffer;
-        PlayerInputHandler.RelativeMovementTransform = playerCamera.transform;
+        PlayerInputHandler.RelativeMovementTransform = transform;
         PlayerInputHandler.Enable();
 
         Cursor.visible = false;

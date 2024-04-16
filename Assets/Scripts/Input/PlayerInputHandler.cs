@@ -67,6 +67,10 @@ public class PlayerInputHandler : Singleton<PlayerInputHandler>
         Vector2 movementInput = PlayerInput.Movement.ReadValue<Vector2>();
         Vector3 movement;
 
+        Vector3 forward = relativeMovementTransform.forward;
+        forward.y = 0;
+        forward.Normalize();
+
         movement = relativeMovementTransform.forward * movementInput.y;
         movement += relativeMovementTransform.right * movementInput.x;
 

@@ -14,7 +14,7 @@ public class GameManager : Singleton<GameManager>
         get => Instance.shears; 
         set
         {
-            Instance.shears = value;
+            Instance.shears = Mathf.Max(0, value);
             OnShearsChanged?.Invoke();
         }
     }
@@ -23,7 +23,7 @@ public class GameManager : Singleton<GameManager>
         get => Instance.water; 
         set
         {
-            Instance.water = value;
+            Instance.water = Mathf.Max(0, value);
             OnWaterChanged?.Invoke();
         }
     }
@@ -32,7 +32,7 @@ public class GameManager : Singleton<GameManager>
         get => Instance.fertilizer; 
         set
         {  
-            Instance.fertilizer = value; 
+            Instance.fertilizer = Mathf.Max(0, value);
             OnFertilizerChanged?.Invoke();
         }
     }

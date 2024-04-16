@@ -8,10 +8,11 @@ public class Rose : Plant
 
     public override void Interact()
     {
+        GameManager.Shears--;
         GrowthStage--;
     }
 
-    protected override void UpdateGrowthStageInternal()
+    protected override void OnGrowthStageChanged()
     {
         
     }
