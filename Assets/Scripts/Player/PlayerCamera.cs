@@ -14,6 +14,12 @@ namespace PlayerControl
 
         private Vector2 orbitAngles = Vector2.zero;
 
+        private void Start()
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         private void OnValidate()
         {
             if (maxVerticalRotation < minVerticalRotation)
