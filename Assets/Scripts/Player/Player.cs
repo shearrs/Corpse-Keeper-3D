@@ -29,9 +29,6 @@ public class Player : MonoBehaviour
         PlayerInputHandler.JumpBuffer = Stats.JumpBuffer;
         PlayerInputHandler.RelativeMovementTransform = transform;
         PlayerInputHandler.Enable();
-
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
