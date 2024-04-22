@@ -9,12 +9,12 @@ public abstract class Button3D : MonoBehaviour
     [SerializeField] private ButtonData data;
 
     private Material material;
-    private Tween tween;
-    private bool isEnabled;
-    private bool isHovered;
-    private bool isPressed;
+    private Tween colorTween;
+    protected bool isEnabled;
+    protected bool isHovered;
+    protected bool isPressed;
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         isEnabled = true;
         material = GetComponent<MeshRenderer>().material;
@@ -36,7 +36,7 @@ public abstract class Button3D : MonoBehaviour
 
     private void TweenColor(Color target)
     {
-        tween?.Stop();
+        colorTween?.Stop();
 
         Color start = material.color;
         void update(float percentage)
@@ -44,7 +44,7 @@ public abstract class Button3D : MonoBehaviour
             material.color = Color.Lerp(start, target, percentage);
         }
 
-        tween = TweenManager.DoTweenCustom(update, TWEEN_TIME);
+        colorTween = TweenManager.DoTweenCustom(update, TWEEN_TIME);
     }
 
     private void OnMouseEnter()

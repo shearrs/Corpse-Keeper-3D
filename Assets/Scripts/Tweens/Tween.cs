@@ -176,12 +176,14 @@ namespace Tweens
             }
         }
 
-        private void UpdateValue()
+        private void UpdateValue(bool loop = false)
         {
             float easedPercentage;
 
             if (useCustomCurve)
                 easedPercentage = curve.Evaluate(Percentage);
+            else if (loop)
+                easedPercentage = 1 - EasingFunctions.EasePercentage(easingFunction, 1 - Percentage);
             else
                 easedPercentage = EasingFunctions.EasePercentage(easingFunction, Percentage);
 
@@ -222,7 +224,7 @@ namespace Tweens
                 TimePassed += Time.deltaTime;
                 progress -= Time.deltaTime;
 
-                UpdateValue();
+                UpdateValue(true);
                 await Task.Yield();
             }
 

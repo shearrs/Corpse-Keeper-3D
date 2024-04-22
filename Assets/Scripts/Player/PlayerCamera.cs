@@ -16,6 +16,8 @@ namespace PlayerControl
 
         private void Start()
         {
+            MenuCamera.Instance.gameObject.SetActive(false);
+
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
