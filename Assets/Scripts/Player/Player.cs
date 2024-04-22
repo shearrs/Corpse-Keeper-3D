@@ -7,8 +7,10 @@ public class Player : MonoBehaviour
 {
     [Header("Managers")]
     [SerializeField] private PlayerStats stats;
+    [SerializeField] private Animator animator;
     private CustomController controller;
     private PlayerCamera playerCamera;
+    private PlayerAnimation playerAnimation;
 
     [Header("State Machine")]
     [SerializeField] private PlayerStateMachine stateMachine;
@@ -20,10 +22,14 @@ public class Player : MonoBehaviour
     private void Start()
     {
         controller = GetComponent<CustomController>();
+        playerCamera = Camera.main.GetComponent<PlayerCamera>();
+
         PlayerMovement = new(controller);
         Flags = new(controller);
         stateMachine = new(this);
-        playerCamera = Camera.main.GetComponent<PlayerCamera>();
+        playerAnimation = new(controller, animator);
+
+        PlayerToolManager.PlayerAnimation = playerAnimation;
 
         PlayerInputHandler.JumpBuffer = Stats.JumpBuffer;
         PlayerInputHandler.RelativeMovementTransform = transform;
@@ -34,6 +40,7 @@ public class Player : MonoBehaviour
     {
         stateMachine.Update();
         PlayerMovement.Update();
+        playerAnimation.Update();
 
         RotateTowardsCamera();
     }

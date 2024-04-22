@@ -9,13 +9,18 @@ public class PlayerToolManager : Singleton<PlayerToolManager>
     [SerializeField] private Shears shears;
     [SerializeField] private Flashlight flashlight;
     [SerializeField] private PlayerInteraction interaction;
+    private PlayerAnimation playerAnimation;
     private PlayerTool currentTool;
+    private bool isHolding;
 
+    public static PlayerInteraction PlayerInteraction => Instance.interaction;
+    public static PlayerAnimation PlayerAnimation { get => Instance.playerAnimation; set => Instance.playerAnimation = value; }
     public static PlayerTool CurrentTool { get => Instance.currentTool; set => Instance.SetTool(value); }
+    public static bool IsHolding { get => Instance.isHolding; set => Instance.isHolding = value; }
 
     private void Start()
     {
-        CurrentTool = shears;
+        CurrentTool = hands;
     }
 
     private void SetTool(PlayerTool tool)
@@ -23,7 +28,8 @@ public class PlayerToolManager : Singleton<PlayerToolManager>
         if (tool == CurrentTool)
             return;
 
-        CurrentTool.Disable();
+        if (CurrentTool != null)
+            CurrentTool.Disable();
 
         currentTool = tool;
 
@@ -32,8 +38,10 @@ public class PlayerToolManager : Singleton<PlayerToolManager>
 
     private void Update()
     {
-        if (CurrentTool.IsBeingUsed && PlayerInputHandler.InteractInput)
-            interaction.CheckInteraction();
+        if (!CurrentTool.IsBeingUsed && PlayerInputHandler.InteractInput)
+        {
+            CurrentTool.Use();
+        }
     }
 
     private void OnDrawGizmosSelected()

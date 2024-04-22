@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class Hands : PlayerTool
 {
-    public override void Disable()
-    {
-        throw new System.NotImplementedException();
-    }
-
     public override void Enable()
     {
-        throw new System.NotImplementedException();
+    }
+
+    public override void Disable()
+    {
     }
 
     public override void Use()
     {
-        throw new System.NotImplementedException();
+        IsBeingUsed = true;
+        PlayerToolManager.PlayerInteraction.CheckInteraction();
+
+        Animator animator = PlayerToolManager.PlayerAnimation.Animator;
+        animator.PlayAndNotify(this, "Grab", () => IsBeingUsed = false);
     }
 }
