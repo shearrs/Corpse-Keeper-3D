@@ -62,7 +62,6 @@ public class LoadingScreen : MonoBehaviour
 
     public void Disable()
     {
-        FullyLoaded = false;
         text.gameObject.SetActive(false);
         loadingBar.gameObject.SetActive(false);
 
@@ -95,10 +94,9 @@ public class LoadingScreen : MonoBehaviour
         void update(float percentage)
         {
             background.color = Color.Lerp(start, end, percentage);
-            Debug.Log("updating color: " + percentage);
         }
 
-        tween = TweenManager.DoTweenCustom(update, 2f);
+        tween = TweenManager.DoTweenCustom(update, 1f);
 
         if (enable)
             tween.SetOnComplete(OnEnableComplete);

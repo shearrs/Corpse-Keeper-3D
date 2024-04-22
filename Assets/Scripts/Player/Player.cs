@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
 {
     [Header("Managers")]
     [SerializeField] private PlayerStats stats;
-    [SerializeField] private PlayerInteraction interaction;
     private CustomController controller;
     private PlayerCamera playerCamera;
 
@@ -33,7 +32,6 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        interaction.Update();
         stateMachine.Update();
         PlayerMovement.Update();
 
@@ -47,10 +45,5 @@ public class Player : MonoBehaviour
         targetRotation.z = 0;
 
         transform.rotation = targetRotation;
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        interaction.DrawGizmos(); 
     }
 }

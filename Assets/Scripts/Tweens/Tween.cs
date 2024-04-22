@@ -139,6 +139,9 @@ namespace Tweens
 
         public void Stop()
         {
+            if (!IsPlaying)
+                return;
+
             Pause();
 
             PlayOnCompletes();

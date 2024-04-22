@@ -24,13 +24,7 @@ namespace PlayerControl
         }
         private Transform _transform;
 
-        public void Update()
-        {
-            if (PlayerInputHandler.InteractInput)
-                CheckInteraction();
-        }
-
-        private void CheckInteraction()
+        public void CheckInteraction()
         {
             Physics.SphereCast(Transform.position, castRadius, Transform.forward, out RaycastHit hit, interactionRange, interactMask);
 

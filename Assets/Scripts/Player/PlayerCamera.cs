@@ -14,7 +14,7 @@ namespace PlayerControl
 
         private Vector2 orbitAngles = Vector2.zero;
 
-        private void Start()
+        private void Awake()
         {
             MenuCamera.Instance.gameObject.SetActive(false);
 
