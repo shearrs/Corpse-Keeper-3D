@@ -6,6 +6,6 @@ public class Thorns : MonoBehaviour, IInteractable
 {
     public void Interact()
     {
-        throw new System.NotImplementedException();
+        Destroy(gameObject);
     }
 }
