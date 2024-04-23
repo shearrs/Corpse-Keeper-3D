@@ -20,7 +20,7 @@ public class PlayerToolManager : Singleton<PlayerToolManager>
 
     private void Start()
     {
-        CurrentTool = hands;
+        CurrentTool = shears;
     }
 
     private void SetTool(PlayerTool tool)
@@ -41,6 +41,7 @@ public class PlayerToolManager : Singleton<PlayerToolManager>
         if (!CurrentTool.IsBeingUsed && PlayerInputHandler.InteractInput)
         {
             CurrentTool.Use();
+            IsHolding = true;
         }
     }
 
