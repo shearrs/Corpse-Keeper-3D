@@ -9,7 +9,7 @@ OcclusionCullingSettings:
     smallestHole: 0.25
     backfaceThreshold: 100
   m_SceneGUID: 99c9720ab356a0642a771bea13969a05
-  m_OcclusionCullingData: {fileID: 36300000, guid: 18264588f4d218e45835b96f1887f8ee,
+  m_OcclusionCullingData: {fileID: 36300000, guid: bddd774e96ce26d4c898b21f1fa149aa,
     type: 2}
 --- !u!104 &2
 RenderSettings:
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &20804340
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -595,6 +595,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -673,7 +678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &48466543
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -839,7 +844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &59589950
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -906,7 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &73494215
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1048,7 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &82518931
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1349,6 +1354,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1464,6 +1474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1581,6 +1596,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1697,6 +1717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1781,7 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &126858977
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1848,7 +1873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &138247564
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2083,6 +2108,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2161,7 +2191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &151348712
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2272,6 +2302,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2350,7 +2385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &163791193
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2417,7 +2452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &166743711
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2484,7 +2519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &186937994
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2551,7 +2586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &213117630
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2807,6 +2842,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2885,7 +2925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &260670768
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3481,7 +3521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &292284486
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3548,7 +3588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &295790063
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3652,6 +3692,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3967,6 +4012,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4045,7 +4095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &334898763
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4149,6 +4199,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4571,7 +4626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &378736103
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4773,7 +4828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &390422545
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4939,7 +4994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &398482149
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5043,6 +5098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5250,6 +5310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5485,6 +5550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5563,7 +5633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &415174346
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5630,7 +5700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &416399206
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5697,7 +5767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &423716182
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5801,6 +5871,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6472,7 +6547,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474690127}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e577000ac598a7f42be2ad3b72921bdc, type: 3}
   m_Name: 
@@ -6483,6 +6558,9 @@ MonoBehaviour:
     type: 3}
   flytrapPrefab: {fileID: 3061069743695257816, guid: 3bbb1f8257b3320498dedca9381a4963,
     type: 3}
+  roseRange: {x: 0, y: 4}
+  mushroomRange: {x: 5, y: 8}
+  flytrapRange: {x: 9, y: 11}
   positions:
   - {fileID: 697318440}
   - {fileID: 112770442}
@@ -6793,7 +6871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &487886885
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7001,6 +7079,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7248,6 +7331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7363,6 +7451,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7546,7 +7639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &561057254
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7650,6 +7743,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7828,7 +7926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &596073440
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7895,7 +7993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &606044196
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8082,7 +8180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &612182115
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8149,7 +8247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &614917933
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8216,7 +8314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &618956252
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8283,7 +8381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &620705519
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8337,7 +8435,7 @@ MonoBehaviour:
   winScreen: {fileID: 456758527}
   loseScreen: {fileID: 216266540}
   winTimer:
-    cooldownTime: 300
+    cooldownTime: 260
 --- !u!4 &621967497
 Transform:
   m_ObjectHideFlags: 0
@@ -8429,7 +8527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &630746320
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8940,6 +9038,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9258,7 +9361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &763267111
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9363,6 +9466,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9441,7 +9549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &778664061
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9539,7 +9647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &811984880
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9606,7 +9714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &816316185
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9871,7 +9979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &830437735
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10085,6 +10193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10201,6 +10314,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10316,6 +10434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10536,6 +10659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10856,6 +10984,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10971,6 +11104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11149,7 +11287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &914799831
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11386,6 +11524,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11563,7 +11706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &976713253
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11667,6 +11810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12320,6 +12468,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12435,6 +12588,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12651,6 +12809,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12766,6 +12929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13142,7 +13310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1120410987
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13209,7 +13377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1123775232
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13313,6 +13481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13430,6 +13603,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13508,7 +13686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1144415071
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13575,7 +13753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1152975593
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13679,6 +13857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13857,7 +14040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1165443555
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13961,6 +14144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14385,6 +14573,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14500,6 +14693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14777,7 +14975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1273389987
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14913,6 +15111,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15029,6 +15232,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15107,7 +15315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1315606633
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15205,7 +15413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1333845087
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15414,6 +15622,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15529,6 +15742,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15776,6 +15994,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15989,7 +16212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1423337196
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16056,7 +16279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1463101577
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16123,7 +16346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1466120914
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16332,6 +16555,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16447,6 +16675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17120,6 +17353,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17198,7 +17436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1584911950
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17265,7 +17503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1591159854
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17369,6 +17607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17517,6 +17760,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17633,6 +17881,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17748,6 +18001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17988,7 +18246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1661559281
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18615,7 +18873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1689274890
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18824,6 +19082,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18940,6 +19203,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19055,6 +19323,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19236,7 +19509,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1747218820
 Transform:
@@ -19369,7 +19642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1753640692
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19778,6 +20051,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19856,7 +20134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1782759274
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19923,7 +20201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1783984214
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19990,7 +20268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1788410374
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20192,7 +20470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1833958962
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20593,7 +20871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1879857113
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20729,6 +21007,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20807,7 +21090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1900465849
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21011,6 +21294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21126,6 +21414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21342,6 +21635,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21519,7 +21817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &1966605104
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21558,7 +21856,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!65 &1973075265
 BoxCollider:
@@ -21729,6 +22027,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21976,6 +22279,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22092,6 +22400,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22207,6 +22520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22452,7 +22770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &2011177261
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22717,7 +23035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &2035166612
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23013,7 +23331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &2061626167
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23222,6 +23540,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23337,6 +23660,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23454,6 +23782,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dirt (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23569,6 +23902,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dirt (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: db1b3e23b98661e4384dc4344d5899bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23778,7 +24116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &2104534995
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24117,22 +24455,22 @@ PrefabInstance:
     - target: {fileID: 2790699163773229550, guid: e46e72981ec8cb542affe1f7a4304ba2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 14.25
       objectReference: {fileID: 0}
     - target: {fileID: 2790699163773229550, guid: e46e72981ec8cb542affe1f7a4304ba2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.53
+      value: 0.27999997
       objectReference: {fileID: 0}
     - target: {fileID: 2790699163773229550, guid: e46e72981ec8cb542affe1f7a4304ba2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.86
+      value: 0.89000213
       objectReference: {fileID: 0}
     - target: {fileID: 2790699163773229550, guid: e46e72981ec8cb542affe1f7a4304ba2,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.70710653
       objectReference: {fileID: 0}
     - target: {fileID: 2790699163773229550, guid: e46e72981ec8cb542affe1f7a4304ba2,
         type: 3}
@@ -24142,7 +24480,7 @@ PrefabInstance:
     - target: {fileID: 2790699163773229550, guid: e46e72981ec8cb542affe1f7a4304ba2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.70710707
       objectReference: {fileID: 0}
     - target: {fileID: 2790699163773229550, guid: e46e72981ec8cb542affe1f7a4304ba2,
         type: 3}
@@ -24157,7 +24495,7 @@ PrefabInstance:
     - target: {fileID: 2790699163773229550, guid: e46e72981ec8cb542affe1f7a4304ba2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 2790699163773229550, guid: e46e72981ec8cb542affe1f7a4304ba2,
         type: 3}
@@ -24287,6 +24625,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 171368549890091083, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487590235466416674, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 626621603646679577, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1422062036040788457, guid: 478343d57e162ff4c8cee31d53972d8e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24337,10 +24690,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2073012954235629900, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300845188459654149, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002970689532803878, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6065681126293076917, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6284945333914699364, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768717566642759415, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8032740996278516049, guid: 478343d57e162ff4c8cee31d53972d8e,
         type: 3}
       propertyPath: m_Name
       value: Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191220483320099286, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191220483320099286, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.5474735e-13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191220483320099286, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.38000444
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811619405618014453, guid: 478343d57e162ff4c8cee31d53972d8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6404505892869088083, guid: 478343d57e162ff4c8cee31d53972d8e, type: 3}
@@ -24442,7 +24845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df49404ca23172146a997de4c652d2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thorns: {fileID: 8759857790973866213, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
+  thorns: {fileID: -7936999293770764080, guid: e5c2d06c39f8c5e48afc6b77e519dc5b, type: 3}
 --- !u!135 &9182940805619762079
 SphereCollider:
   m_ObjectHideFlags: 0

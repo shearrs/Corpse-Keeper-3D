@@ -6,7 +6,10 @@ public class Thorns : MonoBehaviour, IInteractable
 {
     public void Interact()
     {
+        if (PlayerToolManager.CurrentTool is not Shears)
+            return;
+
         AudioManager.PlaySound(AudioManager.PlantHurtSound, 0.85f, 1f, 0.8f);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

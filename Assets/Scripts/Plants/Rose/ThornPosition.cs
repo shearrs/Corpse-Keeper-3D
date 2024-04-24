@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class ThornPosition : MonoBehaviour
 {
-    [SerializeField] private GameObject thorns;
+    [SerializeField] private Thorns thorns;
 
-    public bool Occupied => thorns.activeSelf;
+    public bool Occupied => thorns.gameObject.activeSelf;
 
-    private void Awake()
+    private void Start()
     {
-        thorns = Instantiate(thorns, transform);
+        thorns = Instantiate(thorns);
+        thorns.transform.parent = transform;
+        thorns.transform.localPosition = Vector3.zero;
         // randomize rotation a bit maybe
 
-        thorns.SetActive(false);
+        thorns.gameObject.SetActive(false);
     }
 
     public void GrowThorns()
@@ -22,7 +24,7 @@ public class ThornPosition : MonoBehaviour
             return;
 
         thorns.transform.rotation = Quaternion.Euler(0, Random.Range(0f, 360f), 0);
-        thorns.SetActive(true);
+        thorns.gameObject.SetActive(true);
     }
 
     public void CutThorns()
@@ -31,6 +33,6 @@ public class ThornPosition : MonoBehaviour
             return;
 
         // particles or something
-        thorns.SetActive(false);
+        thorns.gameObject.SetActive(false);
     }
 }

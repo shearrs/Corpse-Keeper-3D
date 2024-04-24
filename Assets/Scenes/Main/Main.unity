@@ -9,7 +9,7 @@ OcclusionCullingSettings:
     smallestHole: 0.25
     backfaceThreshold: 100
   m_SceneGUID: 50344feb9ae9aa9439b4f62bb745c9d0
-  m_OcclusionCullingData: {fileID: 36300000, guid: 18264588f4d218e45835b96f1887f8ee,
+  m_OcclusionCullingData: {fileID: 36300000, guid: bddd774e96ce26d4c898b21f1fa149aa,
     type: 2}
 --- !u!104 &2
 RenderSettings:
@@ -896,7 +896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &986551018
 Transform:
   m_ObjectHideFlags: 0
@@ -1889,7 +1889,7 @@ MonoBehaviour:
   cutSound: {fileID: 8300000, guid: 4e4eb2bd7c3d7b64abcaf3b24c94bcfb, type: 3}
   flashlightSound: {fileID: 8300000, guid: 6f319f934c8dd9a4d85ddf4410254623, type: 3}
   stepSound: {fileID: 8300000, guid: ea36c8cf5e76c8542aab7b2965970bfc, type: 3}
-  plantHurtSound: {fileID: 0}
+  plantHurtSound: {fileID: 8300000, guid: c5154f2fa5cd7244287078a703bafdaf, type: 3}
 --- !u!1 &1758281825
 GameObject:
   m_ObjectHideFlags: 0

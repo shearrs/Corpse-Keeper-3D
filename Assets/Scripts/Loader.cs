@@ -6,6 +6,11 @@ public class Loader : PersistentSingleton<Loader>
 {
     [SerializeField] private LoadingScreen loadingScreen;
 
+    private void Start()
+    {
+        Load("MainMenu");
+    }
+
     public static void Load(string scene) => Instance.InstanceLoad(scene);
     private void InstanceLoad(string scene)
     {

@@ -26,6 +26,7 @@ public class Rose : Plant
             if (hits[i].gameObject.TryGetComponent(out ThornPosition position))
             {
                 thornPositions.Add(position);
+                Debug.Log("position found: " + position.gameObject);
             }
         }
     }
@@ -40,8 +41,6 @@ public class Rose : Plant
 
     protected override void OnGrowthStageChanged()
     {
-        StopAllCoroutines();
-
         if (GrowthStage == 3 && thornsRoutine == null)
             thornsRoutine = StartCoroutine(IEThorns());
         else if (GrowthStage != 3 && thornsRoutine != null)

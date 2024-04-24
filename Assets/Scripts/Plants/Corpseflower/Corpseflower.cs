@@ -28,12 +28,12 @@ public class Corpseflower : Singleton<Corpseflower>
     {
         growthAmount = value;
 
-        if (growthStage == 1 && growthAmount >= 25)
+        if (growthStage == 1 && growthAmount >= 50)
         {
             GrowthStage = 2;
             growthAmount -= 25;
         }
-        else if (growthStage == 2 && growthAmount >= 50)
+        else if (growthStage == 2 && growthAmount >= 100)
         {
             GrowthStage = 3;
             growthAmount -= 50;

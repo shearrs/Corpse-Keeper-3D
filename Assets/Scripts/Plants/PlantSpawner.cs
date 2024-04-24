@@ -11,6 +11,11 @@ public class PlantSpawner : MonoBehaviour
     [SerializeField] private Mushroom mushroomPrefab;
     [SerializeField] private Flytrap flytrapPrefab;
 
+    [Header("Chances")]
+    [SerializeField] private Vector2Int roseRange;
+    [SerializeField] private Vector2Int mushroomRange;
+    [SerializeField] private Vector2Int flytrapRange;
+
     [Header("Positions")]
     [SerializeField] private Transform[] positions;
 
@@ -28,13 +33,13 @@ public class PlantSpawner : MonoBehaviour
     // 9-11 - flytrap
     private void SpawnPlant(Vector3 position)
     {
-        int random = Random.Range(0, 12);
+        int random = Random.Range(0, flytrapRange.y);
 
         Plant plant;
 
-        if (random < 6)
+        if (random < roseRange.y)
             plant = rosePrefab;
-        else if (random < 9)
+        else if (random < mushroomRange.y)
             plant = mushroomPrefab;
         else
             plant = flytrapPrefab;

@@ -52,7 +52,7 @@ MonoBehaviour:
   stage1: {fileID: 6863317793317427953}
   stage2: {fileID: 7529555738102243093}
   stage3: {fileID: 2697829840698676803}
-  growthRate: 0.75
+  growthRate: 1
 --- !u!135 &1478347385794827949
 SphereCollider:
   m_ObjectHideFlags: 0
