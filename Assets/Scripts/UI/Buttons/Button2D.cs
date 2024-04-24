@@ -93,6 +93,7 @@ namespace UI
             if (isHovered)
             {
                 TweenColor(data.HighlightedColor);
+                AudioManager.PlayButtonSound();
                 OnClicked();
             }
             else

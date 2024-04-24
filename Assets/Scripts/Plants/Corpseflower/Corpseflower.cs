@@ -8,6 +8,7 @@ public class Corpseflower : Singleton<Corpseflower>
     [SerializeField] private GameObject stage2;
     [SerializeField] private GameObject stage3;
 
+    private AudioSource audioSource;
     private GameObject currentStage;
     private int growthStage;
     private float growthAmount;
@@ -19,6 +20,7 @@ public class Corpseflower : Singleton<Corpseflower>
     {
         base.Awake();
 
+        audioSource = GetComponent<AudioSource>();
         GrowthStage = 1;
     }
 
@@ -51,6 +53,9 @@ public class Corpseflower : Singleton<Corpseflower>
             currentStage = stage2;
         else if (growthStage == 3)
             currentStage = stage3;
+
+        if (GrowthStage != 1)
+            audioSource.Play();
 
         currentStage.SetActive(true);
     }

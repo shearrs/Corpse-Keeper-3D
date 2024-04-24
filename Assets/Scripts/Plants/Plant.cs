@@ -14,6 +14,7 @@ public abstract class Plant : MonoBehaviour, IInteractable
     private GameObject currentStage;
     private Coroutine growthRoutine;
     private Coroutine corpseRoutine;
+    private AudioSource audioSource;
 
     [Header("Stats")]
     [SerializeField] private float growthRate;
@@ -39,6 +40,8 @@ public abstract class Plant : MonoBehaviour, IInteractable
         currentStage = stage1;
         currentStage.SetActive(true);
         growthRoutine = StartCoroutine(IEGrowth());
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     protected virtual void AddGrowthAmount()
@@ -64,6 +67,9 @@ public abstract class Plant : MonoBehaviour, IInteractable
     private void UpdateGrowthStage()
     {
         GameObject newStage = null;
+
+        if (GrowthStage == 1)
+            audioSource.Play();
 
         switch(GrowthStage)
         {

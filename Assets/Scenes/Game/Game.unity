@@ -6472,12 +6472,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474690127}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e577000ac598a7f42be2ad3b72921bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rosePrefab: {fileID: 0}
+  rosePrefab: {fileID: 3539655662660448385, guid: 9da8d40c9db4aa34480be4bd7ea58bd9,
+    type: 3}
   mushroomPrefab: {fileID: 37186362323000143, guid: 2b511f88b2c22ad45961b53c05f512d1,
     type: 3}
   flytrapPrefab: {fileID: 3061069743695257816, guid: 3bbb1f8257b3320498dedca9381a4963,
@@ -24267,11 +24268,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3336924258802259985, guid: dfa0df591d1c76c45ad1eaf95aa11b32,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7866825384590057424, guid: dfa0df591d1c76c45ad1eaf95aa11b32,
         type: 3}

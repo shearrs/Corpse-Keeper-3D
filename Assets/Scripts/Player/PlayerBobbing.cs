@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerBobbing : MonoBehaviour
 {
+    private const float LOW_INTERVAL = (Mathf.PI * 3) / 2;
+
     [Header("References")]
     [SerializeField] private Transform bone;
     private CustomController controller;
@@ -34,7 +36,8 @@ public class PlayerBobbing : MonoBehaviour
             StopCoroutine(smoothCoroutine);
 
         float t = 0;
-        float speed = bobbingSpeed;
+        float stepTime = 0;
+        float speed;
         Vector3 originalPosition = bone.localPosition;
 
         while (PlayerIsMoving)
@@ -44,12 +47,22 @@ public class PlayerBobbing : MonoBehaviour
             else
                 speed = bobbingSpeed;
 
+            float stepInterval = LOW_INTERVAL / speed;
+
+            if (stepTime > stepInterval)
+            {
+                stepTime -= stepInterval;
+                AudioManager.PlaySound(AudioManager.StepSound, 0.85f, 1f, 0.35f);
+            }
+
             Vector3 position = bone.localPosition;
-            position.y += (0.01f * bobbingHeight) * Mathf.Sin(speed * t);
+            float offset = (0.01f * bobbingHeight) * Mathf.Sin(speed * 1.25f * t);
+            position.y += offset;
 
             bone.localPosition = position;
 
             t += Time.deltaTime;
+            stepTime += Time.deltaTime;
 
             yield return null;
         }

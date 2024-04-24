@@ -82,6 +82,7 @@ public abstract class Button3D : MonoBehaviour
         if (isHovered)
         {
             TweenColor(data.HighlightedColor);
+            AudioManager.PlayButtonSound();
             OnClicked();
         }
         else

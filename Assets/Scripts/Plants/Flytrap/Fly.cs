@@ -5,12 +5,14 @@ using UnityEngine;
 public class Fly : MonoBehaviour, IInteractable
 {
     [SerializeField] private float timeToFly;
+    private AudioSource audioSource;
 
     public int CurrentPosition { get; set; }
     public Flytrap Flytrap { get; set; }
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine(IEFly());
     }
 
@@ -42,7 +44,13 @@ public class Fly : MonoBehaviour, IInteractable
             {
                 transform.position = Vector3.Lerp(start, target, elapsedTime / timeToFly);
 
+                float pitch = audioSource.pitch;
+                pitch += Random.Range(-0.01f, 0.01f);
+                pitch = Mathf.Clamp(pitch, 0.9f, 1.25f);
+                audioSource.pitch = pitch;
+
                 elapsedTime += Time.deltaTime;
+
                 yield return null;
             }
 

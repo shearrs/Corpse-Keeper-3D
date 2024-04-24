@@ -48,7 +48,10 @@ public class Flashlight : PlayerTool
 
     public override void Use()
     {
-        flashlight.gameObject.SetActive(!flashlight.gameObject.activeSelf);
+        AudioManager.PlaySound(AudioManager.FlashlightSound, 0.75f, 1f);
+
+        bool active = flashlight.gameObject.activeSelf;
+        flashlight.gameObject.SetActive(!active);
     }
 
     private IEnumerator IEDelayActivation(bool enable)

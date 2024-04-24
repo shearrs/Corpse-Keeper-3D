@@ -19,12 +19,30 @@ public class PlantSpawner : MonoBehaviour
         for (int i = 0; i < positions.Length; i++)
         {
             Transform position = positions[i];
-
-            Flytrap flytrap = Instantiate(flytrapPrefab, transform);
-
-            Vector3 targetPosition = position.position;
-            targetPosition.y += POSITION_OFFSET;
-            flytrap.transform.position = targetPosition;
+            SpawnPlant(position.position);
         }
+    }
+
+    // 0-5  - rose
+    // 6-8 - mushroom
+    // 9-11 - flytrap
+    private void SpawnPlant(Vector3 position)
+    {
+        int random = Random.Range(0, 12);
+
+        Plant plant;
+
+        if (random < 6)
+            plant = rosePrefab;
+        else if (random < 9)
+            plant = mushroomPrefab;
+        else
+            plant = flytrapPrefab;
+
+        plant = Instantiate(plant, transform);
+
+        Vector3 targetPosition = position;
+        targetPosition.y += POSITION_OFFSET;
+        plant.transform.position = targetPosition;
     }
 }

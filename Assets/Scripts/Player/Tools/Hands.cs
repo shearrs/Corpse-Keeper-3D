@@ -46,9 +46,8 @@ public class Hands : PlayerTool
 
         IsBeingUsed = true;
 
+        AudioManager.PlaySound(AudioManager.HandSound, 0.65f, 0.85f, 0.65f, 0.1f);
         Animator animator = PlayerToolManager.PlayerAnimation.Animator;
-
-        if (!PlayerToolManager.IsHolding)
-            animator.PlayAndNotify(this, "Grab", () => IsBeingUsed = false);
+        animator.PlayAndNotify(this, "Grab", () => IsBeingUsed = false);
     }
 }

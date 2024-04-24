@@ -47,6 +47,8 @@ public class Shears : PlayerTool
 
     public override void Use()
     {
+        AudioManager.PlaySound(AudioManager.CutSound, 0.85f, 1f, 1, 0.1f);
+
         IsBeingUsed = true;
         PlayerToolManager.PlayerInteraction.CheckInteraction();
 
