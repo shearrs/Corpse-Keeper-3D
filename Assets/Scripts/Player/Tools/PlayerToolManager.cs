@@ -20,7 +20,28 @@ public class PlayerToolManager : Singleton<PlayerToolManager>
 
     private void Start()
     {
-        CurrentTool = shears;
+        CurrentTool = hands;
+    }
+
+    private void Update()
+    {
+        CheckInput();
+
+        if (!CurrentTool.IsBeingUsed && PlayerInputHandler.InteractInput)
+        {
+            CurrentTool.Use();
+            IsHolding = true;
+        }
+    }
+
+    private void CheckInput()
+    {
+        if (PlayerInputHandler.Tool1Input)
+            CurrentTool = hands;
+        else if (PlayerInputHandler.Tool2Input)
+            CurrentTool = shears;
+        else if (PlayerInputHandler.Tool3Input)
+            CurrentTool = flashlight;
     }
 
     private void SetTool(PlayerTool tool)
@@ -34,15 +55,6 @@ public class PlayerToolManager : Singleton<PlayerToolManager>
         currentTool = tool;
 
         CurrentTool.Enable();
-    }
-
-    private void Update()
-    {
-        if (!CurrentTool.IsBeingUsed && PlayerInputHandler.InteractInput)
-        {
-            CurrentTool.Use();
-            IsHolding = true;
-        }
     }
 
     private void OnDrawGizmosSelected()

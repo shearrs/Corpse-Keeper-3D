@@ -28,7 +28,7 @@ namespace PlayerControl
                 maxVerticalRotation = minVerticalRotation;
         }
 
-        private void Update()
+        private void LateUpdate()
         {
             UpdateRotation();
         }

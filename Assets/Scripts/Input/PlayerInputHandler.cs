@@ -5,6 +5,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : Singleton<PlayerInputHandler>
 {
+    private static PlayerInputActions InputActions => Instance.inputActions;
+    private static PlayerInputActions.PlayerActions PlayerInput => InputActions.Player;
+
+    // inputs
     public static Vector3 MovementInput
     {
         get
@@ -28,9 +32,11 @@ public class PlayerInputHandler : Singleton<PlayerInputHandler>
             return !JumpBuffer.Done;
         }
     }
-    private static PlayerInputActions InputActions => Instance.inputActions;
-    private static PlayerInputActions.PlayerActions PlayerInput => InputActions.Player;
+    public static bool Tool1Input => PlayerInput.Tool1.WasPressedThisFrame();
+    public static bool Tool2Input => PlayerInput.Tool2.WasPressedThisFrame();
+    public static bool Tool3Input => PlayerInput.Tool3.WasPressedThisFrame();
 
+    // references
     public static Cooldown JumpBuffer { get => Instance.jumpBuffer; set => Instance.jumpBuffer = value; }
     public static Transform RelativeMovementTransform { get => Instance.relativeMovementTransform; set => Instance.relativeMovementTransform = value; }
 

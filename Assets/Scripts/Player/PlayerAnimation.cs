@@ -25,9 +25,10 @@ namespace PlayerControl
 
         public void Update()
         {
-            animator.SetBool("shears", true);
+            float velocity = controller.Velocity.sqrMagnitude;
+
             animator.SetBool(isGroundedID, controller.IsGrounded);
-            animator.SetFloat(moveAmountID, controller.Velocity.magnitude);
+            animator.SetFloat(moveAmountID, velocity);
             animator.SetBool(isHoldingID, PlayerToolManager.IsHolding);
             animator.SetBool(isRunningID, PlayerInputHandler.SprintInput);
         }

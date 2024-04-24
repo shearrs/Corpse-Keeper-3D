@@ -71,6 +71,33 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Tool1"",
+                    ""type"": ""Button"",
+                    ""id"": ""d3e9081c-231f-44a6-9545-d2bf6f67a8ae"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Tool2"",
+                    ""type"": ""Button"",
+                    ""id"": ""75f8e597-5c39-4015-8a99-201880f06a63"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Tool3"",
+                    ""type"": ""Button"",
+                    ""id"": ""cf96d701-5d8f-491a-90b8-35260d52ccc6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -132,7 +159,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""864818cb-2390-4f6a-966b-0aeb13ae3b44"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard and Mouse"",
@@ -172,6 +199,39 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""CameraMovement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""49ef31e9-70c9-41d6-a14a-9555772f711a"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""Tool1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""227caeb5-0fe6-4fd7-84c9-09fa09722d7f"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""Tool2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a664ae3b-7c74-4a74-aa46-d2406b12e470"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""Tool3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -202,6 +262,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_CameraMovement = m_Player.FindAction("CameraMovement", throwIfNotFound: true);
+        m_Player_Tool1 = m_Player.FindAction("Tool1", throwIfNotFound: true);
+        m_Player_Tool2 = m_Player.FindAction("Tool2", throwIfNotFound: true);
+        m_Player_Tool3 = m_Player.FindAction("Tool3", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -268,6 +331,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Sprint;
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_CameraMovement;
+    private readonly InputAction m_Player_Tool1;
+    private readonly InputAction m_Player_Tool2;
+    private readonly InputAction m_Player_Tool3;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -277,6 +343,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @CameraMovement => m_Wrapper.m_Player_CameraMovement;
+        public InputAction @Tool1 => m_Wrapper.m_Player_Tool1;
+        public InputAction @Tool2 => m_Wrapper.m_Player_Tool2;
+        public InputAction @Tool3 => m_Wrapper.m_Player_Tool3;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -301,6 +370,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @CameraMovement.started += instance.OnCameraMovement;
             @CameraMovement.performed += instance.OnCameraMovement;
             @CameraMovement.canceled += instance.OnCameraMovement;
+            @Tool1.started += instance.OnTool1;
+            @Tool1.performed += instance.OnTool1;
+            @Tool1.canceled += instance.OnTool1;
+            @Tool2.started += instance.OnTool2;
+            @Tool2.performed += instance.OnTool2;
+            @Tool2.canceled += instance.OnTool2;
+            @Tool3.started += instance.OnTool3;
+            @Tool3.performed += instance.OnTool3;
+            @Tool3.canceled += instance.OnTool3;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -320,6 +398,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @CameraMovement.started -= instance.OnCameraMovement;
             @CameraMovement.performed -= instance.OnCameraMovement;
             @CameraMovement.canceled -= instance.OnCameraMovement;
+            @Tool1.started -= instance.OnTool1;
+            @Tool1.performed -= instance.OnTool1;
+            @Tool1.canceled -= instance.OnTool1;
+            @Tool2.started -= instance.OnTool2;
+            @Tool2.performed -= instance.OnTool2;
+            @Tool2.canceled -= instance.OnTool2;
+            @Tool3.started -= instance.OnTool3;
+            @Tool3.performed -= instance.OnTool3;
+            @Tool3.canceled -= instance.OnTool3;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -353,5 +440,8 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnSprint(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnCameraMovement(InputAction.CallbackContext context);
+        void OnTool1(InputAction.CallbackContext context);
+        void OnTool2(InputAction.CallbackContext context);
+        void OnTool3(InputAction.CallbackContext context);
     }
 }

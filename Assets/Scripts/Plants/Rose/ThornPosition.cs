@@ -21,6 +21,7 @@ public class ThornPosition : MonoBehaviour
         if (Occupied)
             return;
 
+        thorns.transform.rotation = Quaternion.Euler(0, Random.Range(0f, 360f), 0);
         thorns.SetActive(true);
     }
 

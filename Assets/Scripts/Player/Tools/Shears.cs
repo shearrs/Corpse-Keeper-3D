@@ -4,10 +4,24 @@ using UnityEngine;
 
 public class Shears : PlayerTool
 {
+    [SerializeField] private GameObject gfx;
     private Animator animator;
+    private Animator playerAnimator;
 
+    private readonly int shearsID = Animator.StringToHash("shears");
     private readonly int cutID = Animator.StringToHash("Cut");
     private readonly int shearsCutID = Animator.StringToHash("ShearsCut");
+
+    private Animator PlayerAnimator
+    {
+        get
+        {
+            if (playerAnimator == null)
+                playerAnimator = PlayerToolManager.PlayerAnimation.Animator;
+
+            return playerAnimator;
+        }
+    }
 
     private void Awake()
     {
@@ -16,12 +30,19 @@ public class Shears : PlayerTool
 
     public override void Disable()
     {
-        gameObject.SetActive(false);
+        PlayerAnimator.SetBool(shearsID, false);
+
+        StopAllCoroutines();
+        StartCoroutine(IEDelayActivation(false));
     }
 
     public override void Enable()
     {
-        gameObject.SetActive(true);
+        PlayerAnimator.SetBool(shearsID, true);
+        gfx.SetActive(false);
+
+        StopAllCoroutines();
+        StartCoroutine(IEDelayActivation(true));
     }
 
     public override void Use()
@@ -32,14 +53,23 @@ public class Shears : PlayerTool
         StartCoroutine(IECut());
     }
 
+    private IEnumerator IEDelayActivation(bool enable)
+    {
+        while (PlayerAnimator.IsInTransition(0))
+            yield return null;
+
+        while (!PlayerAnimator.IsPlaying("Idle"))
+            yield return null;
+            
+        gfx.SetActive(enable);
+    }
+
     private IEnumerator IECut()
     {
-        Animator playerAnimator = PlayerToolManager.PlayerAnimation.Animator;
-
-        playerAnimator.Play(shearsCutID);
+        PlayerAnimator.Play(shearsCutID);
         animator.Play(cutID);
 
-        while (playerAnimator.IsPlaying("ShearsCut") || playerAnimator.IsInTransition(0))
+        while (PlayerAnimator.IsPlaying("ShearsCut") || PlayerAnimator.IsInTransition(0))
             yield return null;
 
         while (animator.IsPlaying("Cut") || animator.IsInTransition(0))

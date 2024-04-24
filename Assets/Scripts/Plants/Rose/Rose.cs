@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class Rose : Plant
 {
-    [SerializeField] private float thornDetectionRadius = 5.5f;
-    private LayerMask thornMask;
+    [SerializeField] private Cooldown thornsCooldown;
+    private SphereAreaCheck hazardCheck;
     private readonly List<ThornPosition> thornPositions = new();
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        hazardCheck = GetComponent<SphereAreaCheck>();
+    }
 
     private void Start()
     {
-        thornMask = LayerMask.NameToLayer("ThornPosition");
-        Collider[] hits = Physics.OverlapSphere(transform.position, thornDetectionRadius, thornMask, QueryTriggerInteraction.Collide);
+        hazardCheck.CheckArea();
+        Collider[] hits = hazardCheck.GetHits();
 
         for (int i = 0; i < hits.Length; i++)
         {
@@ -32,13 +39,39 @@ public class Rose : Plant
 
     protected override void OnGrowthStageChanged()
     {
-        
+        StopAllCoroutines();
+
+        if (GrowthStage == 3)
+            StartCoroutine(IEThorns());
     }
 
-    public void OnDrawGizmos()
+    private IEnumerator IEThorns()
     {
-        Gizmos.color = Color.red;
+        while(true)
+        {
+            SpawnThorns();
+            thornsCooldown.StartTimer();
 
-        Gizmos.DrawWireSphere(transform.position, thornDetectionRadius);
+            while (!thornsCooldown.Done)
+                yield return null;
+
+            yield return null;
+        }
+    }
+
+    private void SpawnThorns()
+    {
+        for (int i = 0; i < thornPositions.Count; i++)
+        {
+            ThornPosition position = thornPositions[i];
+
+            if (position.Occupied)
+                continue;
+            else
+            {
+                position.GrowThorns();
+                break;
+            }
+        }
     }
 }

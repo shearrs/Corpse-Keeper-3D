@@ -9,6 +9,7 @@ public class SphereAreaCheck : MonoBehaviour
     [SerializeField] private Color gizmosColor = Color.red;
 
     [Header("Detection")]
+    [SerializeField] private bool detectTriggers;
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private float radius = .4f;
     [SerializeField] private Vector3 originOffset = Vector3.zero;
@@ -24,7 +25,9 @@ public class SphereAreaCheck : MonoBehaviour
     /// </summary>
     public int CheckArea()
     {
-        hits = Physics.OverlapSphereNonAlloc(transform.TransformPoint(originOffset), radius, collisions, layerMask);
+        QueryTriggerInteraction query = detectTriggers ? QueryTriggerInteraction.Collide : QueryTriggerInteraction.Ignore;
+
+        hits = Physics.OverlapSphereNonAlloc(transform.TransformPoint(originOffset), radius, collisions, layerMask, query);
 
         return hits;
     }
