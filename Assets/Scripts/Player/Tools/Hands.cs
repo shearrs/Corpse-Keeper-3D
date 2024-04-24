@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Hands : PlayerTool
 {
+    [SerializeField] private GameObject fly;
     private Animator animator;
 
     private readonly int handsID = Animator.StringToHash("hands");
@@ -11,6 +12,19 @@ public class Hands : PlayerTool
     private void Awake()
     {
         animator = GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        if (PlayerToolManager.CurrentTool is Hands)
+        {
+            if (PlayerToolManager.IsHolding && !fly.activeSelf)
+                fly.SetActive(true);
+            else if (!PlayerToolManager.IsHolding && fly.activeSelf)
+                fly.SetActive(false);
+        }
+        else if (fly.activeSelf)
+            fly.SetActive(false);
     }
 
     public override void Enable()
@@ -25,8 +39,12 @@ public class Hands : PlayerTool
 
     public override void Use()
     {
-        IsBeingUsed = true;
         PlayerToolManager.PlayerInteraction.CheckInteraction();
+
+        if (PlayerToolManager.IsHolding)
+            return;
+
+        IsBeingUsed = true;
 
         Animator animator = PlayerToolManager.PlayerAnimation.Animator;
 

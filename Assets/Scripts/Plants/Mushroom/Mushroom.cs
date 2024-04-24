@@ -59,10 +59,16 @@ public class Mushroom : Plant
         else
         {
             if (poisonRoutine != null)
+            {
                 StopCoroutine(poisonRoutine);
+                poisonRoutine = null;
+            }
 
             if (burnRoutine != null)
+            {
                 StopCoroutine(burnRoutine);
+                burnRoutine = null;
+            }
         }
     }
 

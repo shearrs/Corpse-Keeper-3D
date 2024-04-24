@@ -6,6 +6,7 @@ public class Rose : Plant
 {
     [SerializeField] private Cooldown thornsCooldown;
     private SphereAreaCheck hazardCheck;
+    private Coroutine thornsRoutine;
     private readonly List<ThornPosition> thornPositions = new();
 
     protected override void Awake()
@@ -41,8 +42,13 @@ public class Rose : Plant
     {
         StopAllCoroutines();
 
-        if (GrowthStage == 3)
-            StartCoroutine(IEThorns());
+        if (GrowthStage == 3 && thornsRoutine == null)
+            thornsRoutine = StartCoroutine(IEThorns());
+        else if (GrowthStage != 3 && thornsRoutine != null)
+        {
+            StopCoroutine(thornsRoutine);
+            thornsRoutine = null;
+        }
     }
 
     private IEnumerator IEThorns()

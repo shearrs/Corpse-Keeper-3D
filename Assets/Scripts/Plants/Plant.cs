@@ -16,16 +16,16 @@ public abstract class Plant : MonoBehaviour, IInteractable
     private Coroutine corpseRoutine;
 
     [Header("Stats")]
-    [SerializeField] private int growthRate;
+    [SerializeField] private float growthRate;
     private float growthAmount = 0;
     private int growthStage = 1;
 
-    protected int GrowthStage { 
+    public int GrowthStage { 
         get
         {
             return growthStage;
         }
-        set
+        protected set
         {
             growthStage = value;
             growthStage = Mathf.Clamp(growthStage, 1, 3);
@@ -88,14 +88,20 @@ public abstract class Plant : MonoBehaviour, IInteractable
         if (GrowthStage == 3)
         {
             if (growthRoutine != null)
+            {
                 StopCoroutine(growthRoutine);
+                growthRoutine = null;
+            }
 
             corpseRoutine ??= StartCoroutine(IECorpseGrowth());
         }
         else
         {
             if (corpseRoutine != null)
+            {
                 StopCoroutine(corpseRoutine);
+                corpseRoutine = null;
+            }
 
             growthRoutine ??= StartCoroutine(IEGrowth());
         }

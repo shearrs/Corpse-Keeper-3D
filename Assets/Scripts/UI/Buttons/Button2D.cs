@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace UI
 {
-    public abstract class MenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
+    public abstract class Button2D : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
     {
         private const float TWEEN_TIME = 0.1f;
 

@@ -24,9 +24,6 @@ public class Corpseflower : Singleton<Corpseflower>
 
     private void SetGrowthAmount(float value)
     {
-        if (GrowthStage == 3)
-            return;
-
         growthAmount = value;
 
         if (growthStage == 1 && growthAmount >= 25)

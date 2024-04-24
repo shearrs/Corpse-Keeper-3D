@@ -28,10 +28,7 @@ public class PlayerToolManager : Singleton<PlayerToolManager>
         CheckInput();
 
         if (!CurrentTool.IsBeingUsed && PlayerInputHandler.InteractInput)
-        {
             CurrentTool.Use();
-            IsHolding = true;
-        }
     }
 
     private void CheckInput()
@@ -50,7 +47,12 @@ public class PlayerToolManager : Singleton<PlayerToolManager>
             return;
 
         if (CurrentTool != null)
+        {
+            if (CurrentTool.IsBeingUsed)
+                return;
+
             CurrentTool.Disable();
+        }
 
         currentTool = tool;
 

@@ -56,7 +56,7 @@ public class Flashlight : PlayerTool
         while (PlayerAnimator.IsInTransition(0))
             yield return null;
 
-        while (!PlayerAnimator.IsPlaying("Idle"))
+        while (!PlayerAnimator.IsPlaying("Idle") && !PlayerAnimator.IsPlaying("FlashlightHold"))
             yield return null;
 
         gfx.SetActive(enable);

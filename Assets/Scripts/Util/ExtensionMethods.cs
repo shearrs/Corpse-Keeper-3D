@@ -29,6 +29,7 @@ public static class ExtensionMethods
             yield return null;
         }
 
+        Debug.Log("animation complete");
         onComplete?.Invoke();
     }
 
