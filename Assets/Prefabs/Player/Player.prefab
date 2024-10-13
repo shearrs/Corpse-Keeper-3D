@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd0ac7102db4144ba7fc3a7e19a1d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 25
+  sensitivity: 0.3
   minVerticalRotation: -80
   maxVerticalRotation: 80
 --- !u!1 &8008225892114194162
@@ -516,6 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drawGizmos: 1
   gizmosColor: {r: 1, g: 0, b: 0, a: 1}
+  detectTriggers: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -1203,6 +1204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eaf2deaab1062e408ef3144187285ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fly: {fileID: 0}
 --- !u!4 &6708477380437498956 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4dbe0b6f59731a84cabc1d70ff95f0bd,

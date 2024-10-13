@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class Plant : MonoBehaviour, IInteractable
 {
     const float GROWTH_THRESHOLD = 10;
-    const float CORPSE_GROWTH_TIME = 5f;
+    const float CORPSE_GROWTH_TIME = 9f;
 
     [Header("Stages")]
     [SerializeField] private GameObject stage1;

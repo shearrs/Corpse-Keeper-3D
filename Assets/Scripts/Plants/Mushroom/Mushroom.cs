@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mushroom : Plant
 {
-    const float TIME_TO_BURN = 2f;
+    const float TIME_TO_BURN = 0.25f;
 
     [SerializeField] private PoisonCloud cloudPrefab;
     [SerializeField] private float cloudHeightOffset;

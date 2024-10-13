@@ -52,7 +52,7 @@ public class PlayerBobbing : MonoBehaviour
             if (stepTime > stepInterval)
             {
                 stepTime -= stepInterval;
-                AudioManager.PlaySound(AudioManager.StepSound, 0.85f, 1f, 0.35f);
+                AudioManager.PlaySound(AudioManager.StepSound, 0.85f, 1f, 0.15f);
             }
 
             Vector3 position = bone.localPosition;

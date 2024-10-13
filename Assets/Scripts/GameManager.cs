@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     {
         while (!winTimer.Done)
         {
-            if (Corpseflower.GrowthAmount >= 100)
+            if (Corpseflower.GrowthAmount >= 120)
             {
                 Lose();
                 yield break;

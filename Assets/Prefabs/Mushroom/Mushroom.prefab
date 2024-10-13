@@ -53,7 +53,7 @@ MonoBehaviour:
   stage1: {fileID: 2589666141692890922}
   stage2: {fileID: 1436267844897749392}
   stage3: {fileID: 529749556865096456}
-  growthRate: 1
+  growthRate: 0.7
   cloudPrefab: {fileID: 5284358810182549488, guid: 23a2e382aeea03f4d873a2a341bd392b,
     type: 3}
   cloudHeightOffset: 1.5

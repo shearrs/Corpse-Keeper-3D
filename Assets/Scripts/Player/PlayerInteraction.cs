@@ -8,7 +8,7 @@ namespace PlayerControl
     public class PlayerInteraction
     {
         [SerializeField] private bool drawGizmos = true;
-        [SerializeField] private float interactionRange = 3;
+        [SerializeField] private float interactionRange = 5;
         [SerializeField] private float castRadius = 0.5f;
         [SerializeField] private LayerMask interactMask;
 

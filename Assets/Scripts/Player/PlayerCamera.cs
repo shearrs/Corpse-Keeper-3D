@@ -37,7 +37,7 @@ namespace PlayerControl
         {
             Vector2 movementInput = PlayerInputHandler.CameraMovementInput;
             Vector2 input = new(-movementInput.y, movementInput.x);
-            orbitAngles += sensitivity * Time.deltaTime * input;
+            orbitAngles += sensitivity * input;
 
             ConstrainAngles();
 
