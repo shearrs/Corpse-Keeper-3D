@@ -8435,8 +8435,11 @@ MonoBehaviour:
   winScreen: {fileID: 456758527}
   loseScreen: {fileID: 216266540}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   winTimer:
     cooldownTime: 230
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!4 &621967497

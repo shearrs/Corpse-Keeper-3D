@@ -5,7 +5,11 @@ using UnityEngine;
 public class Mushroom : Plant
 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     const float TIME_TO_BURN = 0.25f;
+=======
+    const float TIME_TO_BURN = 0.3f;
+>>>>>>> Stashed changes
 =======
     const float TIME_TO_BURN = 0.3f;
 >>>>>>> Stashed changes

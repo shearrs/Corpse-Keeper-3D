@@ -21,7 +21,11 @@ public class GameManager : Singleton<GameManager>
         while (!AllPlantsCut)
         {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             if (Corpseflower.GrowthAmount >= 120)
+=======
+            if (Corpseflower.GrowthStage == 3 && Corpseflower.GrowthAmount >= 100)
+>>>>>>> Stashed changes
 =======
             if (Corpseflower.GrowthStage == 3 && Corpseflower.GrowthAmount >= 100)
 >>>>>>> Stashed changes
