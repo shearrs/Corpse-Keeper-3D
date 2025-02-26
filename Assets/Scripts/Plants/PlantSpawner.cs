@@ -10,6 +10,7 @@ public class PlantSpawner : MonoBehaviour
     [SerializeField] private Rose rosePrefab;
     [SerializeField] private Mushroom mushroomPrefab;
     [SerializeField] private Flytrap flytrapPrefab;
+    private List<Plant> plants = new();
 
     [Header("Chances")]
     [SerializeField] private Vector2Int roseRange;
@@ -26,6 +27,22 @@ public class PlantSpawner : MonoBehaviour
             Transform position = positions[i];
             SpawnPlant(position.position);
         }
+    }
+
+    private void Update()
+    {
+        CheckForCutPlants();
+    }
+
+    private void CheckForCutPlants()
+    {
+        for (int i = 0; i < plants.Count; i++)
+        {
+            if (!plants[i].Cut)
+                return;
+        }
+
+        GameManager.AllPlantsCut = true;
     }
 
     // 0-5  - rose
@@ -49,5 +66,7 @@ public class PlantSpawner : MonoBehaviour
         Vector3 targetPosition = position;
         targetPosition.y += POSITION_OFFSET;
         plant.transform.position = targetPosition;
+
+        plants.Add(plant);
     }
 }

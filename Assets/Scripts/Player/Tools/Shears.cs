@@ -60,8 +60,16 @@ public class Shears : PlayerTool
         while (PlayerAnimator.IsInTransition(0))
             yield return null;
 
-        while (!PlayerAnimator.IsPlaying("Idle") && !PlayerAnimator.IsPlaying("ShearsHold"))
-            yield return null;
+        if (enable)
+        {
+            while (!PlayerAnimator.IsPlaying("Idle") && !PlayerAnimator.IsPlaying("ShearsHold") && !PlayerAnimator.IsPlaying("ShearsCut"))
+                yield return null;
+        }
+        else
+        {
+            while (PlayerAnimator.IsPlaying("ShearsHold") || PlayerAnimator.IsPlaying("ShearsCut"))
+                yield return null;
+        }
             
         gfx.SetActive(enable);
     }

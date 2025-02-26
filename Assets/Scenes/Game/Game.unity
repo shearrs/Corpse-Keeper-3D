@@ -6560,7 +6560,7 @@ MonoBehaviour:
     type: 3}
   roseRange: {x: 0, y: 4}
   mushroomRange: {x: 5, y: 8}
-  flytrapRange: {x: 9, y: 11}
+  flytrapRange: {x: 9, y: 9}
   positions:
   - {fileID: 697318440}
   - {fileID: 112770442}
@@ -8434,8 +8434,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winScreen: {fileID: 456758527}
   loseScreen: {fileID: 216266540}
+<<<<<<< Updated upstream
   winTimer:
     cooldownTime: 230
+=======
+>>>>>>> Stashed changes
 --- !u!4 &621967497
 Transform:
   m_ObjectHideFlags: 0
@@ -24651,6 +24654,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008225892114194162, guid: e46e72981ec8cb542affe1f7a4304ba2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8877443192883633128, guid: e46e72981ec8cb542affe1f7a4304ba2,
         type: 3}

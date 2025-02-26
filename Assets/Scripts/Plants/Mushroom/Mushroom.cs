@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Mushroom : Plant
 {
+<<<<<<< Updated upstream
     const float TIME_TO_BURN = 0.25f;
+=======
+    const float TIME_TO_BURN = 0.3f;
+>>>>>>> Stashed changes
 
     [SerializeField] private PoisonCloud cloudPrefab;
     [SerializeField] private float cloudHeightOffset;
@@ -90,7 +94,7 @@ public class Mushroom : Plant
 
     private IEnumerator IEPoisonClouds()
     {
-        WaitForSeconds cloudDelay = new(1f);
+        WaitForSeconds cloudDelay = new(6f);
 
         while(true)
         {

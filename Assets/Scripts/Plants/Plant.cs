@@ -21,6 +21,7 @@ public abstract class Plant : MonoBehaviour, IInteractable
     private float growthAmount = 0;
     private int growthStage = 1;
 
+    public bool Cut { get; private set; } = false;
     public int GrowthStage { 
         get
         {
@@ -68,8 +69,7 @@ public abstract class Plant : MonoBehaviour, IInteractable
     {
         GameObject newStage = null;
 
-        if (GrowthStage == 1)
-            audioSource.Play();
+        growthAmount = 0;
 
         switch(GrowthStage)
         {
@@ -109,6 +109,15 @@ public abstract class Plant : MonoBehaviour, IInteractable
                 corpseRoutine = null;
             }
 
+            if (GrowthStage == 1)
+            {
+                audioSource.Play();
+                Cut = true;
+
+                OnGrowthStageChanged();
+                return;
+            }
+
             growthRoutine ??= StartCoroutine(IEGrowth());
         }
 
@@ -117,7 +126,7 @@ public abstract class Plant : MonoBehaviour, IInteractable
     
     private IEnumerator IEGrowth()
     {
-        while(true)
+        while (true)
         {
             float elapsedTime = 0;
 
@@ -147,7 +156,7 @@ public abstract class Plant : MonoBehaviour, IInteractable
                 yield return null;
             }
 
-            Corpseflower.GrowthAmount += 1;
+            Corpseflower.GrowthAmount += 0.5f;
 
             yield return null;
         }
